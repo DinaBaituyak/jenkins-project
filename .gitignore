@@ -1,0 +1,55 @@
+# === OS / Editor files ===
+.DS_Store
+*.swp
+*.swo
+*.tmp
+*.log
+
+# === Terraform ===
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Local Terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# Terraform plan output
+*.plan
+plan.out
+
+# === Helm ===
+*.tgz
+helm-jenkins-project/charts/
+helm-jenkins-project/tmp/
+helm-jenkins-project/.helmignore
+
+# === Kubernetes ===
+kubeconfig
+.kube/
+
+# === AWS CLI credentials (never push secrets!) ===
+.aws/
+*.pem
+
+# === Maven/Java ===
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# === Node/npm (if any frontend code later) ===
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# === Python virtual envs (if you use them for scripts) ===
+.venv/
+__pycache__/
+*.pyc
